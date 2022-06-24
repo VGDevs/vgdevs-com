@@ -1,14 +1,16 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+require('dotenv').config();
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'VGDevs',
-  tagline: 'Video Game Developes\'s Tools and Blogs',
-  url: 'https://vgdevs.com',
+  tagline: 'Video Game Developes\'s Tools and Blog',
+  // @ts-ignore
+  url: process.env.URL,
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -37,14 +39,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/VGDevs/vgdevs-com/tree/master/web',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/VGDevs/vgdevs-com/tree/master/web/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -56,22 +58,38 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      },
       navbar: {
-        title: 'My Site',
+        title: '',
+        hideOnScroll: true,
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'VGDevs Logo',
+          src: 'img/VGD.svg',
+          srcDark: 'img/VGD_dark.svg',
         },
         items: [
           {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Tutorials',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            to: '/blog', 
+            label: 'Blog', 
+            position: 'left'
+          },
+          {
+            to: 'https://github.com/VGDevs/VGDevs-UnityTools',
+            label: 'UnityTools',
+            position: 'left',
+          },
+          {
+            href: 'https://github.com/VGDevs/vgdevs-com',
             label: 'GitHub',
             position: 'right',
           },
@@ -115,14 +133,15 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/VGDevs/vgdevs-com',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} VGDevs. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} VGDevs. Add your own content on <a href="https://github.com/VGDevs/vgdevs-com" target="_new">GitHub.</a><br>Built with <a href="https://docusaurus.io/" target="_new">Docusaurus.</a>`,
       },
       prism: {
+        defaultLanguage: 'csharp',
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
