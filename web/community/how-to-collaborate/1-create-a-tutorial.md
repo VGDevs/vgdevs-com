@@ -22,17 +22,17 @@ A new document is now available at `http://localhost:3000/docs/category/subcateg
 
 ## Configure the Sidebar
 
-Docusaurus automatically **creates a sidebar** from the `docs` folder.
+The sitde automatically **creates a sidebar** from the `docs` folder.
 
 Add metadata to customize the sidebar label and position:
 
-```md title="docs/hello.md" {1-4}
+```md title="docs/my-tutorial.md" {1-4}
 ---
-sidebar_label: 'Hi!'
+sidebar_label: 'My Tutorial!'
 sidebar_position: 3
 ---
 
 # Hello
 
-This is my **first Docusaurus document**!
+This is my **first tutorial**!
 ```
