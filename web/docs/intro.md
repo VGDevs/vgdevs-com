@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# So, you want to make games
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
@@ -27,13 +27,14 @@ The classic template will automatically be added to your project after you run t
 npm init docusaurus@latest my-website classic
 ```
 
-```csharp
+```csharp title="MonoSingletonSelfGenerated.cs"
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace VGDevs
 {
+    // code-block-error-line
     public class MonoSingletonSelfGenerated<T> : MonoBehaviour where T : MonoBehaviour
     {
         [SerializeField] private bool m_isPersistentThroughScenes;
