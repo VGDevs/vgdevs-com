@@ -1,8 +1,6 @@
 ---
-sidebar_position: 2
+title: 🔥 Create a Tutorial
 ---
-
-# Create a Document
 
 Documents are **groups of pages** connected through:
 
@@ -10,17 +8,17 @@ Documents are **groups of pages** connected through:
 - **previous/next navigation**
 - **versioning**
 
-## Create your first Doc
+## Create your first Tutorial
 
-Create a markdown file at `docs/hello.md`:
+Create a markdown file at `docs/category/subcategory/mytutorial.md`:
 
-```md title="docs/hello.md"
+```md title="docs/category/subcategory/mytutorial.md"
 # Hello
 
 This is my **first Docusaurus document**!
 ```
 
-A new document is now available at `http://localhost:3000/docs/hello`.
+A new document is now available at `http://localhost:3000/docs/category/subcategory/mytutorial`.
 
 ## Configure the Sidebar
 
@@ -37,19 +35,4 @@ sidebar_position: 3
 # Hello
 
 This is my **first Docusaurus document**!
-```
-
-It is also possible to create your sidebar explicitly in `sidebars.js`:
-
-```js title="sidebars.js"
-module.exports = {
-  tutorialSidebar: [
-    {
-      type: 'category',
-      label: 'Tutorial',
-      // highlight-next-line
-      items: ['hello'],
-    },
-  ],
-};
 ```

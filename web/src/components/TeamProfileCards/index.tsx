@@ -79,61 +79,19 @@
    return (
      <div className="row">
        <TeamProfileCardCol
-         name="Alexey Pyltsyn"
-         githubUrl="https://github.com/lex111">
-         <Translate id="team.profile.Alexey Pyltsyn.body">
-           Obsessed open-source enthusiast 👋 Eternal amateur at everything 🤷‍♂️
-           Maintainer of Russian docs on PHP, React, Kubernetes and much more 🧐
-         </Translate>
-       </TeamProfileCardCol>
-       <TeamProfileCardCol
-         name="Joel Marcey"
-         githubUrl="https://github.com/JoelMarcey"
-         twitterUrl="https://twitter.com/joelmarcey">
-         <Translate id="team.profile.Joel Marcey.body">
-           Docusaurus founder and now ever grateful Docusaurus cheerleader to
-           those who actually write code for it.
-         </Translate>
-       </TeamProfileCardCol>
-       <TeamProfileCardCol
-         name="Sébastien Lorber"
-         githubUrl="https://github.com/slorber"
-         twitterUrl="https://twitter.com/sebastienlorber">
-         <Translate
-           id="team.profile.Sebastien Lorber.body"
-           values={{
-             website: <WebsiteLink to="https://sebastienlorber.com/" />,
-             devto: <Link to="https://dev.to/sebastienlorber">Dev.to</Link>,
-           }}>
-           {
-             'React lover since 2014. Freelance, helping Facebook ship Docusaurus v2. He writes regularly, on his {website} and {devto}.'
-           }
-         </Translate>
-       </TeamProfileCardCol>
-       <TeamProfileCardCol
-         name="Sida Chen"
-         githubUrl="https://github.com/Josh-Cena"
-         twitterUrl="https://twitter.com/SidaChen63">
-         <Translate id="team.profile.Sida Chen.body">
-           Student from Shanghai, China. Enthusiastic open-source project
-           creator, but never actually works hard on those projects he created.
-         </Translate>
-       </TeamProfileCardCol>
-       <TeamProfileCardCol
-         name="Yangshun Tay"
-         githubUrl="https://github.com/yangshun"
-         twitterUrl="https://twitter.com/yangshunz">
-         <Translate id="team.profile.Yangshun Tay.body">
-           Full Front End Stack developer who likes working on the Jamstack.
-           Working on Docusaurus made him Facebook&apos;s unofficial part-time
-           Open Source webmaster, which is an awesome role to be in.
+         name="Eduardo Uribe"
+         githubUrl="https://github.com/EduardoU24"
+         twitterUrl="https://twitter.com/EduardoU24">
+         <Translate id="team.profile.EduardoU.body">
+           VGDevs 'Owner' - Software Developer since I was 14 👋. I have aproximate knowledge of many things.
+           Unity 'Expert' learning Unreal Engine 🧐
          </Translate>
        </TeamProfileCardCol>
      </div>
    );
  }
  
- export function HonoraryAlumniTeamRow(): JSX.Element {
+ export function HonoraryTeamRow(): JSX.Element {
    return (
      <div className="row">
        <TeamProfileCardCol
@@ -157,7 +115,7 @@
    );
  }
  
- export function StudentFellowsTeamRow(): JSX.Element {
+ export function FellowsTeamRow(): JSX.Element {
    return (
      <div className="row">
        <TeamProfileCardCol

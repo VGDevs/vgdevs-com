@@ -177,6 +177,11 @@ const config = {
         magicComments:
         [
           {
+            className: 'theme-code-block-highlighted-line',
+            line: 'highlight-next-line',
+            block: {start: 'highlight-start', end: 'highlight-end'},
+          },
+          {
             className: 'code-block-error-line',
             line: 'code-block-error-line',
           },
