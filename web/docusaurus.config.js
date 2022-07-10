@@ -141,7 +141,7 @@ const config = {
               },
               {
                 label: 'Community',
-                to: '/community',
+                to: '/community/welcome',
               },
               {
                 label: 'Create your own Article',
