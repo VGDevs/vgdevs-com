@@ -69,19 +69,27 @@ html[data-theme='dark'] {
   background-image: linear-gradient(326deg, #a4508b4a 0%, #5f0a87cf 74%);
 }
 
+.row.footer__links {
+  font-size: 80%;
+}
+
+.footer__copyright {
+  margin-top: 2.5em;
+}
+
 .footer__copyright a {
   color: var(--ifm-footer-link-color);
   text-decoration: none;
   font-weight: var(--ifm-font-weight-semibold);
 }
 
+.footer__copyright a:hover {
+  color: var(--ifm-link-hover-color);
+}
+
 .footer--dark {
   background-color: #000000;
   background-image: linear-gradient(285deg, #242e3e 19%, #303846 73%);
-}
-
-.footer__copyright a:hover {
-  color: var(--ifm-link-hover-color);
 }
 
 .navbar__logo img {

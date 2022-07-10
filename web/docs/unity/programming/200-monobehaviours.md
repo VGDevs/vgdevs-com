@@ -1,8 +1,7 @@
 ---
-custom-id: paaa
-title: What are Components
+title: 📗 MonoBehaviour
 authors: [EduardoU24]
-tags: [starters]
+tags: [📗Basics]
 ---
 
 ### The UnityEngine.Object

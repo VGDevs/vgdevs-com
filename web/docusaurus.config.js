@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'VGDevs',
-  tagline: 'Community curated tutorials, tools, articles and all things game development.',
+  tagline: 'A community managed collection on all things game development.',
   // @ts-ignore
   url: process.env.URL,
   baseUrl: '/',
@@ -104,7 +104,7 @@ const config = {
             position: 'left'
           },
           {
-            to: '/community/support',
+            to: '/community/welcome',
             label: 'Community',
             position: 'left',
             activeBaseRegex: `/community/`,
@@ -129,43 +129,58 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Content',
             items: [
               {
                 label: 'Tutorial',
                 to: '/docs/intro',
               },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
               {
                 label: 'Blog',
                 to: '/blog',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/VGDevs/vgdevs-com',
+                label: 'Community',
+                to: '/community',
               },
-            ],
+              {
+                label: 'Create your own Article',
+                to: '/community/how-to-collaborate/',
+              },
+              {
+                label: 'Join our Discord (soon™️)',
+                href: '#',
+              },
+              {
+                label: 'Contact us on Twitter',
+                href: 'https://twitter.com/EduardoU24',
+              }
+            ]
+          },
+          {
+            title: 'Emoji Meaning',
+            items: [
+              {
+                label: '🌱 Sproud\'s Articles are friendly to newcomers',
+                to: '/docs/tags/🌱-starters',
+              },
+              {
+                label: '📗 Green Books are for those learning about the topic.',
+                to: '/docs/tags/📗-basics',
+              },
+              {
+                label: '📘 Blue Books are for those more confident about the topic.',
+                to: '/docs/tags/📘-advanced',
+              },
+              {
+                label: '📙 Orange Books asumme a level of expertise on the topic.',
+                to: '/docs/tags/📙-experts',
+              },
+              {
+                label: '📖 Open Books are MUST reads for everyone.',
+                to: '/docs/tags/📖-mustread',
+              }
+            ]
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} VGDevs. Add your own content on <a href="https://github.com/VGDevs/vgdevs-com" target="_new">GitHub.</a><br>Built with ❤️ on <a href="https://docusaurus.io/" target="_new">Docusaurus</a>, served by <a href="https://railway.app?referralCode=jZcOjs" target="_new">Railway</a>`,

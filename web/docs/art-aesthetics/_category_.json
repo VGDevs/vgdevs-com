@@ -1,6 +1,7 @@
 {
-  "label": "Advanced",
-  "position": 2,
+  "label": "🎨 Art & Aesthetics",
+  "slug": "art-aesthetics",
+  "position": 1,
   "link": {
     "type": "generated-index",
     "description": "TBD Description"
