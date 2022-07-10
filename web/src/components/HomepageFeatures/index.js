@@ -4,32 +4,32 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Contenido Comunitario',
+    title: 'Community Managed Content',
     Svg: require('@site/static/img/undraw_typewriter.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Everyone can create, modify or delete articles, tutorials or blog posts.
+        Even you!, just make a Pull Request on GitHub.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Curated by everyone',
     Svg: require('@site/static/img/undraw_version_control.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        All content is reviewed by our collaborators and approved
+        if they meet the requirements.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Save and Share',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        The more content is added the better, share your thoughts, assets, tools, code or tips.
+        Lets create together the most useful site for all things game development.
       </>
     ),
   },
