@@ -22,7 +22,7 @@ A new document is now available at `http://localhost:3000/docs/category/subcateg
 
 ## Configure the Sidebar
 
-The sitde automatically **creates a sidebar** from the `docs` folder.
+The site will automatically **creates a sidebar** from the `docs` folder.
 
 Add metadata to customize the sidebar label and position:
 
