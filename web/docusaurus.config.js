@@ -178,7 +178,7 @@ const config = {
               },
               {
                 label: '📖 Open Books are MUST reads for everyone.',
-                to: '/docs/tags/📖-mustread',
+                to: '/docs/tags/📖-must-read',
               }
             ]
           },
