@@ -1,8 +1,8 @@
 ---
 slug: long-blog-post
 title: Long Blog Post
-authors: EduardoU24
-tags: [hello, docusaurus]
+authors: [EduardoU24]
+tags: [test]
 ---
 
 This is the summary of a very long blog post,
