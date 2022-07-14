@@ -18,7 +18,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            New to Game Development? Check our Guides.
+            New Here? Check our 🌱 articles.
           </Link>
         </div>
       </div>
