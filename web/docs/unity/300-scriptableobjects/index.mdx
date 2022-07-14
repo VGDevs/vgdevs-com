@@ -1,0 +1,31 @@
+---
+title: 📘 ScriptableObjects
+authors: [EduardoU24]
+tags: [📘Advanced, ⚙️Programming]
+---
+
+### What is an ScriptableObject
+
+### What can I do with it
+
+### Unity's Explanation
+
+Check the official explanation in the [Unity Docs Site](https://docs.unity3d.com/Manual/class-ScriptableObject.html)
+
+### Diagram
+
+```mermaid
+classDiagram
+    UnityEngine_Object <|-- ScriptableObject
+    UnityEngine_Object: Instantiate()
+    UnityEngine_Object: Destroy()
+    ScriptableObject <|-- YourCustomScriptableObject
+    class ScriptableObject {
+        CreateInstance()
+        OnValidate()
+    }
+    class YourCustomScriptableObject {
+        customData
+        CustomMethods()
+    }
+```

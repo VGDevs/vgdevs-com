@@ -48,25 +48,3 @@ If you’re using Unity, **[Infallible Code](https://www.youtube.com/c/Infallibl
 
 [![Watch the video](https://img.youtube.com/vi/hQE8lQk9ikE/default.jpg)](https://youtu.be/hQE8lQk9ikE)
 
-
-### Unity's Explanation
-
-Check the official explanation in the [Unity Docs Site](https://docs.unity3d.com/Manual/class-ScriptableObject.html)
-
-### Diagram
-
-```mermaid
-classDiagram
-    UnityEngine_Object <|-- ScriptableObject
-    UnityEngine_Object: Instantiate()
-    UnityEngine_Object: Destroy()
-    ScriptableObject <|-- YourCustomScriptableObject
-    class ScriptableObject {
-        CreateInstance()
-        OnValidate()
-    }
-    class YourCustomScriptableObject {
-        customData
-        CustomMethods()
-    }
-```
