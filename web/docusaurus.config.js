@@ -4,6 +4,12 @@
 require('dotenv').config();
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const remarkmath = require('remark-math');
+const remarkoembed = require('@agentofuser/remark-oembed');
+const mdxmermaid = require('mdx-mermaid');
+const sidebarPath = require.resolve('./sidebarsCommunity.js')
+const remarkPlugins = [mdxmermaid, remarkmath, remarkoembed];
+const editUrl = 'https://github.com/VGDevs/vgdevs-com/tree/master/web';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -36,15 +42,10 @@ const config = {
         id: 'community',
         path: 'community',
         routeBasePath: 'community',
-        editUrl: ({locale, versionDocsDirPath, docPath}) => {
-          if (locale !== 'en') {
-            return `https://crowdin.com/project/docusaurus-v2/${locale}`;
-          }
-          return `https://github.com/facebook/docusaurus/edit/main/website/${versionDocsDirPath}/${docPath}`;
-        },
+        editUrl,
         editCurrentVersion: true,
-        sidebarPath: require.resolve('./sidebarsCommunity.js'),
-        remarkPlugins: [require('mdx-mermaid')],
+        sidebarPath,
+        remarkPlugins,
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
       }),
@@ -56,17 +57,14 @@ const config = {
       '@docusaurus/preset-classic',
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          remarkPlugins: [require('mdx-mermaid')],
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/VGDevs/vgdevs-com/tree/master/web',
+          remarkPlugins,
+          sidebarPath,
+          editUrl,
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/VGDevs/vgdevs-com/tree/master/web/',
+          remarkPlugins,
+          editUrl,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -80,8 +78,8 @@ const config = {
     ({
       colorMode: {
         defaultMode: 'dark',
-        disableSwitch: false,
-        respectPrefersColorScheme: true,
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
       navbar: {
         title: '',
